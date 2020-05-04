@@ -1,5 +1,3 @@
-console.log('it is from clint side');
-
 const weatherData = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message1')
