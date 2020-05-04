@@ -5,8 +5,8 @@ const express = require('express')
 const hbs = require('hbs')
 
 const app = express()
-
-//define path for express config
+const port = process.env.port || 3000
+    //define path for express config
 const publicDircteryPath = path.join(__dirname, '../public')
 const templatePath = path.join(__dirname, '../templates/views')
 const partialPath = path.join(__dirname, '../templates/partial')
@@ -78,6 +78,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen('3000', () => {
+app.listen(port, () => {
     console.log('The server is on')
 })
