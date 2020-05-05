@@ -8,7 +8,7 @@ const forcast = ({ latitude, longitude }, callback) => {
         } else if (body.message) {
             callback('unable to get the data', undefined)
         } else {
-            callback(undefined, 'The tempreture is ' + body.main.temp + '. The humidity is ' + body.main.humidity + 'The pressure is ' + body.main.pressure //response.body.main.humidity
+            callback(undefined, 'The tempreture is ' + body.main.temp + '. The humidity is ' + body.main.humidity + '. The pressure is ' + body.main.pressure //response.body.main.humidity
             )
         }
     })
